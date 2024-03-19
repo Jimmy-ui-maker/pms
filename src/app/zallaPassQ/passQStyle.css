@@ -1,0 +1,379 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons";
+
+:root {
+  --testColor: #0b0c27;
+  --lightColor: #fafafa;
+}
+
+/*--------------------------------------------------------------
+  # ZallaPassQNavbar Navbar Section
+  --------------------------------------------------------------*/
+.zallaPassQNavbar {
+  padding: 0;
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.zallaPassQNavbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: end;
+}
+
+.zallaPassQNavbar li {
+  position: relative;
+}
+
+.zallaPassQNavbar i {
+  color: var(--softColor);
+}
+
+.zallaPassQNavbar a,
+.zallaPassQNavbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lightColor);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.zallaPassQNavbar a:hover,
+.zallaPassQNavbar .active,
+.zallaPassQNavbar .active:focus,
+.zallaPassQNavbar li:hover > a {
+  color: var(--softColor);
+}
+@media (max-width: 768px) {
+  .sidebar {
+    background: linear-gradient(var(--testColor), var(--softColor));
+    backdrop-filter: blur(10px);
+  }
+}
+
+/*--------------------------------------------------------------
+# ZallaLandingPage Section
+--------------------------------------------------------------*/
+.zallaLandingPage {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(var(--testColor), var(--softColor));
+  background-size: cover;
+}
+
+.zallaLandingPage .uper h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--lightColor);
+}
+
+.zallaLandingPage .uper h2 {
+  color: var(--softColor);
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+.zallaLandingPage .uper .img-head {
+  color: var(--lightColor);
+  font-size: 26px;
+}
+
+.zallaLandingPage .uper .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: var(--lightColor);
+  background: linear-gradient(var(--testColor), var(--softColor));
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.zallaLandingPage .uper .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.zallaLandingPage .uper .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.zallaLandingPage .uper .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.zallaLandingPage .uper img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.zallaLandingPage .uper .hero-img {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .zallaLandingPage {
+    background-attachment: fixed;
+  }
+  .zallaLandingPage .uper .hero-img img {
+    height: 85%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .zallaLandingPage {
+    height: auto;
+    text-align: center;
+    padding: 10px 0 60px 0;
+  }
+  .zallaLandingPage .uper img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .zallaLandingPage .uper .hero-img {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .zallaLandingPage .uper .hero-img img {
+    width: 100%;
+  }
+
+  .zallaLandingPage .uper h1 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .zallaLandingPage .uper h2 {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.about img {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+.about .content h2 {
+  color: var(--softColor);
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 34px;
+}
+
+.about .content h3 {
+  color: var(--testColor);
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .about .content h2 {
+    font-size: 20px;
+  }
+}
+
+.about .content p {
+  color: var(--testColor);
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about .btn-about {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: var(--lightColor);
+  background: linear-gradient(var(--testColor), var(--softColor));
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.about .btn-about span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.about .btn-about i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.about .btn-about:hover i {
+  transform: translateX(5px);
+}
+
+/*--------------------------------------------------------------
+# Siwes Form Section
+--------------------------------------------------------------*/
+.levelCard {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.levelCard .section-title h2 {
+  font-size: 45px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--softColor);
+  text-transform: uppercase;
+}
+.levelCard .card {
+  width: 100%;
+  height: 65vh;
+  cursor: pointer;
+  box-shadow: 0px 0 30px rgba(38, 43, 48, 0.288);
+  border: 0;
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.levelCard .card img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.levelCard .card .bText {
+  padding: 10px;
+}
+
+.levelCard .card .bText p {
+  color: var(--testColor);
+  font-size: 10px;
+}
+.levelCard .card .bText p strong {
+  color: var(--testColor);
+  font-size: 10px;
+}
+
+.levelCard .card .bText small {
+  font-size: 8px;
+}
+.levelCard .card .bText small:hover {
+  color: var(--testColor);
+}
+
+@media (max-width: 768px) {
+  .levelCard .card {
+    width: 100%;
+    height: 40vh;
+  }
+  .levelCard .card img {
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+  }
+  .levelCard .section-title h2 {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+  # passQForm
+  --------------------------------------------------------------*/
+.passQForm {
+  background: var(--softColor);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.passQForm form {
+  padding: 15px;
+  border: 1px solid var(--testColor);
+}
+
+.passQForm form img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.passQForm hr {
+  color: var(--testColor);
+}
+
+.passQForm h1 {
+  color: var(--testColor);
+  font-size: 35px;
+  padding: 15px;
+  line-height: 30px;
+  text-shadow: -1px 0 1px #2f4d5a;
+}
+
+.passQForm h2 {
+  color: var(--testColor);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.passQForm label {
+  color: var(--testColor);
+  font-size: 18px;
+  font-weight: 600;
+}
+.passQForm input {
+  color: var(--testColor);
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid var(--testColor);
+  background-color: transparent;
+}
+
+.passQForm select {
+  color: var(--testColor);
+  border: 1px solid var(--testColor);
+  font-size: 18px;
+  background-color: transparent;
+}
+.passQForm p {
+  color: var(--testColor);
+  text-align: start;
+  font-size: 18px;
+}
+
+.passQForm .btn-submit {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px;
+  height: 60px;
+  margin-top: 10px;
+  color: var(--testColor);
+  background: var(--softColor);
+  border: 1px solid var(--testColor);
+}
+.passQForm .btn-submit:hover {
+  font-size: 24px;
+  color: var(--testColor);
+  background: var(--softColor);
+}
+@media (max-width: 768px) {
+  .passQForm h1 {
+    font-size: 25px;
+  }
+  .passQForm h2 {
+    color: var(--testColor);
+    font-size: 22px;
+  }
+}

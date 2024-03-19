@@ -1,0 +1,87 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons";
+
+:root {
+    --testColor: #0b0c27;
+    --lightColor: #fafafa;
+  }
+
+
+  /*--------------------------------------------------------------
+# ResultPage Section 
+--------------------------------------------------------------*/
+.resultPage {
+    background: url('/siwes/sch1.jpg');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .resultPage img {
+    height: 150px;
+    width: 200px;
+  }
+  
+  .resultPage h1 {
+    margin: 20px 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: var(--softColor);
+    text-shadow: -1px 0 1px var(--testColor);
+  }
+  
+  .resultPage h2 {
+    color: var(--softColor);
+    opacity: 0.9;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: -1px 0 2px var(--testColor);
+  }
+  
+  .resultPage a {
+    color: var(--softColor);
+    width: 200px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 6px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid var(--softColor);
+  }
+  .resultPage a:hover {
+    color: var(--softColor);
+    font-size: 19px;
+    border: 1px solid var(--softColor);
+  }
+  
+  @media (max-width: 768px) {
+    .resultPage a {
+      font-size: 18px;
+      display: inline-block;
+      padding: 8px 5px;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
+      text-align: center;
+      padding: 10px;
+      margin-top: 15px;
+      border: 1px solid var(--softColor);
+    }
+    .resultPage h1 {
+      font-size: 22px;
+      line-height: 36px;
+    }
+  
+    .resultPage h2 {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  

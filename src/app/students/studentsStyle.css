@@ -1,0 +1,1356 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons";
+@import "lightbox2/dist/css/lightbox.min.css";
+@import "animate.css";
+
+:root {
+  --testColor: #0b0c27;
+  --lightColor: #fafafa;
+  --hoverColor: #75757a;
+  --softColor: #dfd9ff;
+}
+
+/*--------------------------------------------------------------
+  # MainNavbar Section
+  --------------------------------------------------------------*/
+.studentNavbar {
+  padding: 0;
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.studentNavbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: end;
+}
+
+.studentNavbar li {
+  position: relative;
+}
+
+.studentNavbar i {
+  color: var(--softColor);
+}
+
+.studentNavbar a,
+.studentNavbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lightColor);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.studentNavbar a:hover,
+.studentNavbar .active,
+.studentNavbar .active:focus,
+.studentNavbar li:hover > a {
+  color: var(--softColor);
+}
+@media (max-width: 768px) {
+  .sidebar {
+    background: linear-gradient(var(--testColor), var(--softColor));
+    backdrop-filter: blur(10px);
+  }
+}
+
+/*--------------------------------------------------------------
+#General Admin Section Section
+--------------------------------------------------------------*/
+.welcomePage {
+  background: url("/siwes/record.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.welcomePage .login {
+  background: linear-gradient(var(--softColor), var(--testColor));
+  border: 0;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  color: var(--softColor);
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+
+/* up and down*/
+.welcomePage .btn-get-started {
+  -webkit-animation: upDown 5s infinite;
+  animation: upDown 5s infinite;
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+hr {
+  color: var(--testColor);
+}
+
+@media (min-width: 1024px) {
+  .welcomePage {
+    background-attachment: fixed;
+  }
+  .welcomePage .card {
+    background: url("/siwes/record.jpg");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+}
+
+.welcomePage .card:hover {
+  transform: translateY(-5px);
+}
+
+.welcomePage .login:hover {
+  transform: translateY(-5px);
+}
+.welcomePage h3 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: var(--softColor);
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+.welcomePage h5 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: var(--softColor);
+}
+
+.welcomePage i {
+  color: var(--softColor);
+}
+
+.welcomePage .row .a-route .btn {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background: url("/siwes/navar.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: var(--softColor);
+  font-size: 15px;
+  display: inline-block;
+  padding: 15px 0;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin: 8px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  text-align: center;
+  z-index: -1;
+}
+
+.welcomePage .row .a-route .btn:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .welcomePage {
+    background: url("/siwes/record.jpg");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .welcomePage .card {
+    background: url("/siwes/record.jpg");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 1px solid var(--testColor);
+  }
+
+  .welcomePage h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .welcomePage h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .welcomePage .row .a-route .btn {
+    font-size: 10px;
+    display: inline-block;
+    padding: 15px 0;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    margin: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Adding Organizatio
+  --------------------------------------------------------------*/
+
+.cgpaForms {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.cgpaForms .card {
+  background: var(--softColor);
+  margin-top: 20px;
+  border: 2px solid var(--testColor);
+}
+
+.cgpaForms .mobile img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 15px;
+}
+.cgpaForms .imgRow img {
+  width: 100%;
+  height: 70vh;
+  border-radius: 15px;
+  padding: 10px;
+}
+.cgpaForms .card hr {
+  color: var(--testColor);
+}
+
+.cgpaForms .card .card-body h1 {
+  color: var(--testColor);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  text-shadow: -1px 0 1px var(--softColor);
+}
+
+.cgpaForms .card .card-body h2 {
+  color: var(--testColor);
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.cgpaForms .card label {
+  font-size: 18px;
+}
+.cgpaForms .card input {
+  color: var(--testColor);
+  border: 1px solid var(--testColor);
+}
+.cgpaForms .card textarea {
+  border: 1px solid var(--testColor);
+  color: var(--testColor);
+}
+.cgpaForms .card select {
+  border: 1px solid var(--testColor);
+  color: var(--testColor);
+}
+
+.cgpaForms .card .card-body .btn-submit {
+  font-size: 30px;
+  transition: all 2s ease-in-out;
+  font-weight: 700;
+  padding: 5px;
+  height: 60px;
+  margin-top: 10px;
+  color: var(--testColor);
+  background: var(--softColor);
+  border: 2px solid var(--testColor);
+}
+.cgpaForms .card .card-body .btn-submit:hover {
+  font-size: 29px;
+  color: var(--testColor);
+  background: var(--softColor);
+}
+@media (max-width: 768px) {
+  .cgpaForms .card .card-body h1 {
+    color: var(--testColor);
+    font-size: 20px;
+  }
+  .cgpaForms .card .card-body h2 {
+    color: var(--testColor);
+    font-size: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Details Page
+--------------------------------------------------------------*/
+.detalsPage {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+.detalsPage .card {
+  background-color: var(--softColor);
+  border: 2px solid var(--testColor);
+}
+
+.detalsPage .card hr {
+  color: var(--testColor);
+}
+.detalsPage .row1 .flex1 img {
+  width: 100%;
+  height: 20vh;
+}
+.detalsPage .row1 .flex1 p {
+  font-size: 50px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--testColor);
+}
+.detalsPage .row1 .flex2 h1 {
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--testColor);
+}
+.detalsPage .row1 .flex3 h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--testColor);
+}
+.detalsPage .row1 .flex3 img {
+  width: 100%;
+  height: 50vh;
+}
+
+.detalsPage .row1 .flex4 h1 {
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--testColor);
+}
+
+.detalsPage .row1 .flex4 p {
+  font-size: 20px;
+  color: var(--testColor);
+}
+
+.detalsPage .row1 .flex5 h2 {
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--testColor);
+}
+.detalsPage .row1 .flex5 h5 {
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--testColor);
+}
+.detalsPage .row1 .flex5 p {
+  font-size: 20px;
+  color: var(--testColor);
+}
+
+@media (max-width: 768px) {
+  .detalsPage .row1 .flex1 p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .detalsPage .row1 .flex2 h1 {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--testColor);
+  }
+  .detalsPage .row1 .flex1 img {
+    width: 100%;
+    height: 10vh;
+  }
+  .detalsPage .row1 .flex3 h3 {
+    font-size: 19px;
+    color: var(--testColor);
+  }
+  .detalsPage .row1 .flex3 img {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .detalsPage .row1 .flex4 h1 {
+    font-size: 20px;
+    color: var(--testColor);
+  }
+
+  .detalsPage .row1 .flex4 p {
+    font-size: 18px;
+    color: var(--testColor);
+  }
+
+  .detalsPage .row1 .flex5 h2 {
+    font-size: 20px;
+    color: var(--testColor);
+  }
+  .detalsPage .row1 .flex5 h5 {
+    font-size: 19px;
+    color: var(--testColor);
+  }
+  .detalsPage .row1 .flex5 p {
+    font-size: 18px;
+    color: var(--testColor);
+  }
+}
+
+.loading {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.loading h1 {
+  font-size: 50px;
+  color: var(--softColor);
+}
+.loading h1 {
+  font-size: 30px;
+  font-style: italic;
+  color: var(--softColor);
+}
+
+/*--------------------------------------------------------------
+  # Studentcard Section
+  --------------------------------------------------------------*/
+.maincard {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.maincard .card {
+  margin-top: 20px;
+  overflow: hidden;
+  background: linear-gradient(var(--softColor), var(--testColor));
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.maincard .card::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(var(--softColor), var(--testColor));
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.maincard .card:hover::before {
+  background: linear-gradient(var(--testColor), var(--softColor));
+  top: 0;
+}
+
+.maincard .row .mainabout img {
+  width: 100%;
+  height: 70vh;
+}
+
+.maincard .row .mainabout h1 {
+  color: var(--softColor);
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+
+.maincard .row .mainabout h5 {
+  color: var(--testColor);
+  font-size: 20px;
+  font-style: italic;
+}
+
+.maincard .row .mainabout a {
+  color: var(--softColor);
+  background: linear-gradient(var(--softColor), var(--testColor));
+  margin-top: 50px;
+  font-style: italic;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.maincard h2 {
+  margin-top: 20px;
+  color: var(--softColor);
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+
+.maincard p {
+  color: var(--softColor);
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+.maincard .card .card-body h3 {
+  color: var(--testColor);
+  font-size: 40px;
+  font-weight: 600;
+}
+.maincard .card .card-body:hover h3 {
+  color: var(--softColor);
+}
+
+.maincard .card .card-body img {
+  width: 100%;
+  height: 100%;
+}
+
+.maincard .card .card-body h4 {
+  color: var(--softColor);
+  font-size: 20px;
+  font-style: italic;
+}
+
+.maincard .card .card-body a {
+  color: var(--softColor);
+  background: linear-gradient(var(--testColor), var(--softColor));
+  margin-top: 40px;
+  font-style: italic;
+  width: 100%;
+  height: 100%;
+}
+.maincard .text-move {
+  height: 10vh;
+  border-radius: 25px;
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+.maincard .text-move p {
+  font-size: 35px;
+  font-style: italic;
+  color: var(--softColor);
+}
+
+.maincard .text-move {
+  overflow: hidden;
+  position: relative;
+}
+.maincard .text-move p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  /* Apply animation to this element */
+  -moz-animation: text-move 50s linear infinite;
+  -webkit-animation: text-move 50s linear infinite;
+  animation: text-move 50s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes text-move {
+  0% {
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes text-move {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+@keyframes text-move {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .maincard h2 {
+    font-size: 20px;
+  }
+  .maincard .card .card-body h4 {
+    color: var(--testColor);
+  }
+  .maincard p {
+    font-size: 20px;
+  }
+  .maincard .row .mainabout img {
+    width: 100%;
+    height: 50vh;
+  }
+  .maincard .card .card-body img {
+    width: 100%;
+    height: 80%;
+  }
+  .maincard .card .card-body h3 {
+    font-size: 20px;
+  }
+  .maincard .row .mainabout a {
+    margin-top: 20px;
+  }
+  .maincard .card .card-body a {
+    margin-top: 20px;
+  }
+  .maincard .text-move {
+    height: 8vh;
+  }
+  .maincard .text-move p {
+    font-size: 12px;
+    color: var(--softColor);
+  }
+}
+
+/*--------------------------------------------------------------
+  # Siwes card List
+  --------------------------------------------------------------*/
+.cardList {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+.cardList .section-title h2 {
+  padding-top: 20px;
+  font-size: 40px;
+  color: var(--testColor);
+}
+.cardList .section-title p {
+  font-size: 20px;
+  color: var(--testColor);
+}
+
+.cardList .row .stateBody {
+  overflow: hidden;
+  background: linear-gradient(var(--testColor), var(--softColor));
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 10vh;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.cardList .row .stateBody:hover {
+  transform: translateY(-5px);
+}
+
+.cardList .row .stateBody a {
+  color: var(--softColor);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .cardList .section-title h2 {
+    font-size: 25px;
+  }
+  .cardList .section-title p {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# All Levels Records
+--------------------------------------------------------------*/
+.projects {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.projects .title {
+  margin-top: 10px;
+}
+
+.projects .title h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: var(--softColor);
+}
+.projects .title p {
+  font-size: 20px;
+  color: var(--softColor);
+}
+
+.projects .card {
+  border-radius: 10px;
+  background: linear-gradient(var(--testColor), var(--softColor));
+  height: 55vh;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0 30px rgba(38, 43, 48, 0.288);
+}
+
+.projects .card img {
+  height: 50%;
+  width: 100%;
+}
+
+.projects .card h2 {
+  font-size: 20px;
+  color: var(--testColor);
+}
+.projects .card p {
+  font-size: 10px;
+  color: var(--testColor);
+}
+.projects .card a {
+  box-shadow: 0px 0 30px rgba(38, 43, 48, 0.288);
+  font-size: 18px;
+  color: var(--testColor);
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--testColor);
+}
+.projects .card a:hover {
+  font-size: 17px;
+}
+.projects .card2 {
+  border-radius: 10px;
+  background: linear-gradient(var(--softColor), var(--testColor));
+  border: 0;
+  padding: 10px;
+  box-shadow: 0px 0 30px rgba(38, 43, 48, 0.288);
+  transition: all 0.3s ease-in-out;
+}
+.projects .card2 a {
+  font-size: 20px;
+  color: var(--softColor);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.projects .card:hover {
+  transform: translateY(-5px);
+}
+.projects .card2:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .projects .title h2 {
+    font-size: 20px;
+  }
+  .projects .title p {
+    font-size: 17px;
+  }
+  .projects .card {
+    height: 55vh;
+  }
+  .projects .card img {
+    height: 30vh;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Siwes List
+  --------------------------------------------------------------*/
+.siwesList {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.siwesList hr {
+  color: var(--softColor);
+}
+.siwesList .row a {
+  background: linear-gradient(var(--testColor), var(--softColor));
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100px;
+  color: var(--softColor);
+  cursor: pointer;
+}
+.siwesList .organization {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: linear-gradient(var(--softColor), var(--testColor));
+  transition: 0.5s;
+  height: 100%;
+}
+
+.siwesList .section-title h2 {
+  padding-top: 20px;
+  font-size: 40px;
+  color: var(--softColor);
+}
+.siwesList .section-title p {
+  font-size: 20px;
+  color: var(--softColor);
+}
+
+.siwesList .organization .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.siwesList .organization .pic img {
+  height: 25vh;
+  transition: ease-in-out 0.3s;
+}
+
+.siwesList .organization:hover {
+  transform: translateY(-10px);
+}
+
+.siwesList .organization .organization-info {
+  padding-left: 20px;
+}
+
+.siwesList .organization h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--testColor);
+}
+
+.siwesList .organization span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.siwesList .organization span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.siwesList .organization p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.siwesList .organization .links {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+
+.siwesList .organization .links a {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.siwesList .organization .links a i {
+  color: var(--testColor);
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.siwesList .organization .links a:hover {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+.siwesList .row a:hover {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.siwesList .organization .links a + a {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .siwesList .section-title h2 {
+    font-size: 15px;
+  }
+  .siwesList .section-title p {
+    font-size: 18px;
+  }
+  .siwesList .organization h4 {
+    font-size: 15px;
+  }
+  .siwesList .organization .pic {
+    overflow: hidden;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+  .siwesList .organization .pic img {
+    height: 15vh;
+
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/*--------------------------------------------------------------
+# Siwes Form Section
+--------------------------------------------------------------*/
+.siwesForm {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.siwesForm .section-title h2 {
+  font-size: 45px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--testColor);
+  text-transform: uppercase;
+}
+.siwesForm .card {
+  width: 100%;
+  height: 66vh;
+  cursor: pointer;
+  box-shadow: 0px 0 30px rgba(38, 43, 48, 0.288);
+  border: 0;
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.siwesForm .card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.siwesForm .card .bText p {
+  color: var(--testColor);
+  font-size: 18px;
+  margin: 0 2px;
+  font-weight: 600;
+}
+
+.siwesForm .card .bText small {
+  font-size: 8px;
+}
+.siwesForm .card .bText small:hover {
+  color: var(--testColor);
+}
+
+@media (max-width: 768px) {
+  .siwesForm .card {
+    width: 100%;
+    height: 45vh;
+  }
+  .siwesForm .card-img-top {
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+  }
+  .siwesForm .section-title h2 {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# AccordioinPage Section
+--------------------------------------------------------------*/
+.accPage {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(var(--testColor), var(--softColor));
+  background-size: cover;
+}
+
+.accPage .uper h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--lightColor);
+}
+
+.accPage .uper h2 {
+  color: var(--softColor);
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+.accPage .uper .img-head {
+  color: var(--lightColor);
+  font-size: 26px;
+}
+
+.accPage .uper .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: var(--lightColor);
+  background: linear-gradient(var(--testColor), var(--softColor));
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.accPage .uper .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.accPage .uper .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.accPage .uper .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.accPage .uper img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.accPage .uper .hero-img {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .accPage {
+    background-attachment: fixed;
+  }
+  .accPage .uper .hero-img img {
+    height: 85%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .accPage {
+    height: auto;
+    text-align: center;
+    padding: 10px 0 60px 0;
+  }
+  .accPage .uper img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .accPage .uper .hero-img {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .accPage .uper .hero-img img {
+    width: 100%;
+  }
+
+  .accPage .uper h1 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .accPage .uper h2 {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# F.A.Q Page
+--------------------------------------------------------------*/
+.faq {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.faq .faqs-title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--softColor);
+}
+
+.faq .faqs-title p {
+  color: var(--softColor);
+}
+.faq .card {
+  border-radius: 10px;
+  border: 2px solid var(--testColor);
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.faq .card-body h5 {
+  font-size: 30px;
+  color: var(--softColor);
+}
+
+/* Accordion */
+.accordion-item {
+  padding: 10px;
+  border: 1px solid var(--testColor);
+}
+
+.faq .accordion-item {
+  padding: 5px;
+  background: var(--softColor);
+}
+
+.faq .accordion-item button {
+  font-size: 20px;
+  color: var(--testColor);
+  padding: 10px;
+}
+.accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-flush .accordion-button {
+  padding: 15px 0;
+  background: none;
+  border: 0;
+}
+
+.accordion-flush .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: var(--testColor);
+  font-size: 20px;
+}
+
+.accordion-flush .accordion-body {
+  padding: 10px;
+  color: var(--testColor);
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .faq .faqs-title h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--softColor);
+  }
+
+  .faq .card-body h5 {
+    font-size: 18px;
+    color: var(--softColor);
+  }
+  .faq .accordion-item button {
+    font-size: 20px;
+    color: var(--testColor);
+    padding: 10px;
+  }
+  .accordion-flush .accordion-body {
+    padding: 10px;
+    color: var(--testColor);
+    font-size: 18px;
+  }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.footer .footer-top {
+  background: url("/img/suzi.jpg") no-repeat right top;
+  background-size: contain;
+  border-top: 1px solid var(--softColor);
+  border-bottom: 1px solid var(--softColor);
+  padding: 60px 0 30px 0;
+}
+.footer .footer-top a {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-top {
+    background-position: center bottom;
+  }
+}
+
+.footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.footer .footer-top .footer-info .logo {
+  color: var(--testColor);
+}
+
+.footer .footer-top .footer-info .logo span {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--testColor);
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
+}
+
+.footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: var(--testColor);
+  font-family: "Nunito", sans-serif;
+}
+
+.footer .footer-top .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: var(--testColor);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+  color: var(--testColor);
+}
+
+.footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--testColor);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: var(--testColor);
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+  color: var(--testColor);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-top .footer-links ul a:hover {
+  color: var(--testColor);
+  opacity: 0.6;
+}
+
+.footer .footer-top .footer-contact p,
+strong {
+  line-height: 26px;
+  color: var(--testColor);
+}
+
+#footer .scroll-back {
+  background: linear-gradient(var(--testColor), var(--softColor));
+  border-radius: 50px;
+}
+#footer .scroll-back i {
+  font-size: 25px;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: var(--softColor);
+}
+
+.footer .copyright span {
+  color: var(--softColor);
+}
+.footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--softColor);
+}
+
+@media (max-width: 768px) {
+  .footer .footer-top .footer-info .logo span {
+    font-size: 15px;
+  }
+}

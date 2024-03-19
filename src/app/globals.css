@@ -1,0 +1,171 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons";
+@import "animate.css";
+
+:root {
+  --testColor: #0b0c27;
+  --lightColor: #fafafa;
+  --hoverColor: #75757a;
+  --softColor: #dfd9ff;
+}
+/*--------------------------------------------------------------
+# Hero Section resultPage
+--------------------------------------------------------------*/
+.hero {
+  background: url('/siwes/record.jpg');
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  height: 150px;
+  width: 200px;
+}
+
+.hero h1 {
+  margin: 20px 0 10px 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: var(--softColor);
+  text-shadow: -1px 0 1px var(--testColor);
+}
+
+.hero h2 {
+  color: var(--softColor);
+  opacity: 0.9;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: -1px 0 2px var(--testColor);
+}
+
+.hero a {
+  color: var(--softColor);
+  width: 200px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 6px 5px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid var(--softColor);
+}
+.hero a:hover {
+  color: var(--softColor);
+  font-size: 19px;
+  border: 1px solid var(--softColor);
+}
+
+@media (max-width: 768px) {
+  .hero a {
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid var(--softColor);
+  }
+  .hero h1 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .hero h2 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+  # Adding Organizatio
+  --------------------------------------------------------------*/
+
+  .allForms {
+    background: linear-gradient(var(--testColor), var(--softColor));
+  }
+  
+  .allForms .card {
+    background: var(--softColor);
+    margin-top: 20px;
+    border: 2px solid var(--testColor);
+  }
+  
+  .allForms .mobile img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 15px;
+  }
+  .allForms .imgRow img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .allForms .card hr {
+    color: var(--testColor);
+  }
+  
+  .allForms .card .card-body h1 {
+    color: var(--testColor);
+    font-size: 40px;
+    line-height: 30px;
+    text-shadow: -1px 0 1px #2f4d5a;
+  }
+  
+  .allForms .card .card-body h2 {
+    color: var(--testColor);
+    font-size: 35px;
+    line-height: 30px;
+  }
+  
+  .allForms .card label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .allForms .card input {
+    border: 1px solid var(--testColor);
+  }
+  .allForms .card textarea {
+    border: 1px solid var(--testColor);
+  }
+  .allForms .card select {
+    border: 1px solid var(--testColor);
+  }
+  
+  .allForms .card .card-body .btn-submit {
+    font-size: 30px;
+
+    font-weight: 700;
+    padding: 5px;
+    height: 60px;
+    color: var(--testColor);
+    background: var(--softColor);
+    border: 2px solid var(--testColor);
+  }
+  .allForms .card .card-body .btn-submit:hover {
+    font-size: 29px;
+    color: var(--testColor);
+    background: var(--softColor);
+  }
+  @media (max-width: 768px) {
+    .allForms .card .card-body h2 {
+      color: var(--testColor);
+      font-size: 30px;
+    }
+  }
+
+  
+  

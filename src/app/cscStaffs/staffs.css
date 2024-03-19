@@ -1,0 +1,355 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons";
+
+:root {
+  --testColor: #0b0c27;
+  --softColor: #dfd9ff;
+}
+
+/*--------------------------------------------------------------
+# ResultPage Section 
+--------------------------------------------------------------*/
+.staffsPage {
+  background: url("/siwes/adm.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.staffsPage img {
+  height: 150px;
+  width: 200px;
+}
+
+.staffsPage h1 {
+  margin: 20px 0 10px 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: var(--softColor);
+  text-shadow: -1px 0 1px var(--testColor);
+}
+
+.staffsPage h2 {
+  color: var(--softColor);
+  opacity: 0.9;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: -1px 0 2px var(--testColor);
+}
+
+.staffsPage a {
+  color: var(--softColor);
+  width: 200px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 6px 5px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid var(--softColor);
+}
+.staffsPage a:hover {
+  color: var(--softColor);
+  font-size: 19px;
+  border: 1px solid var(--softColor);
+}
+
+@media (max-width: 768px) {
+  .staffsPage a {
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid var(--softColor);
+  }
+  .staffsPage h1 {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .staffsPage h2 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+/*--------------------------------------------------------------
+  # TeachingStaffs Section
+  --------------------------------------------------------------*/
+.teachingStaffs {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.teachingStaffs .row h2 {
+  margin-top: 20px;
+  color: var(--softColor);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+
+.teachingStaffs .row label {
+  color: var(--softColor);
+  font-size: 40px;
+}
+.teachingStaffs .row select {
+  color: var(--softColor);
+  font-size: 18px;
+  border: 1px solid var(--testColor);
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .teachingStaffs .row h2 {
+    font-size: 18px;
+  }
+  .teachingStaffs .row label {
+    color: var(--softColor);
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+  # AllStaffsCards List
+  --------------------------------------------------------------*/
+
+.allStaffsCards hr {
+  color: var(--softColor);
+}
+.allStaffsCards .row a {
+  background: linear-gradient(var(--testColor), var(--softColor));
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100px;
+  color: var(--softColor);
+  cursor: pointer;
+}
+.allStaffsCards .organization {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: linear-gradient(var(--softColor), var(--testColor));
+  transition: 0.5s;
+  height: 100%;
+}
+
+.allStaffsCards .section-title h2 {
+  padding-top: 20px;
+  font-size: 40px;
+  color: var(--softColor);
+}
+.allStaffsCards .section-title p {
+  font-size: 20px;
+  color: var(--softColor);
+}
+
+.allStaffsCards .organization .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.allStaffsCards .organization .pic img {
+  height: 25vh;
+  transition: ease-in-out 0.3s;
+}
+
+.allStaffsCards .organization:hover {
+  transform: translateY(-10px);
+}
+
+.allStaffsCards .organization .organization-info {
+  padding-left: 20px;
+}
+
+.allStaffsCards .organization h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--testColor);
+}
+
+.allStaffsCards .organization span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.allStaffsCards .organization span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.allStaffsCards .organization p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.allStaffsCards .organization .links {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+
+.allStaffsCards .organization .links a {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.allStaffsCards .organization .links a i {
+  color: var(--testColor);
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.allStaffsCards .organization .links a:hover {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+.allStaffsCards .row a:hover {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.allStaffsCards .organization .links a + a {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .allStaffsCards .section-title h2 {
+    font-size: 15px;
+  }
+  .allStaffsCards .section-title p {
+    font-size: 18px;
+  }
+  .allStaffsCards .organization h4 {
+    font-size: 15px;
+  }
+  .allStaffsCards .organization .pic {
+    overflow: hidden;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+  .allStaffsCards .organization .pic img {
+    height: 15vh;
+
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/*--------------------------------------------------------------
+  # CscStaffQForm
+  --------------------------------------------------------------*/
+.cscStaffQForm {
+  background: var(--softColor);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cscStaffQForm form {
+  padding: 15px;
+  border: 1px solid var(--testColor);
+}
+
+.cscStaffQForm form img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.cscStaffQForm hr {
+  color: var(--testColor);
+}
+
+.cscStaffQForm h1 {
+  color: var(--testColor);
+  font-size: 35px;
+  padding: 15px;
+  line-height: 30px;
+  text-shadow: -1px 0 1px #2f4d5a;
+}
+
+.cscStaffQForm h2 {
+  color: var(--testColor);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.cscStaffQForm label {
+  color: var(--testColor);
+  font-size: 18px;
+  font-weight: 600;
+}
+.cscStaffQForm input {
+  color: var(--testColor);
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid var(--testColor);
+  background-color: transparent;
+}
+
+.cscStaffQForm select {
+  color: var(--testColor);
+  border: 1px solid var(--testColor);
+  font-size: 18px;
+  background-color: transparent;
+}
+.cscStaffQForm p {
+  color: var(--testColor);
+  text-align: start;
+  font-size: 18px;
+}
+
+.cscStaffQForm .btn-submit {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px;
+  height: 60px;
+  margin-top: 10px;
+  color: var(--testColor);
+  background: var(--softColor);
+  border: 1px solid var(--testColor);
+}
+.cscStaffQForm .btn-submit:hover {
+  font-size: 24px;
+  color: var(--testColor);
+  background: var(--softColor);
+}
+@media (max-width: 768px) {
+  .cscStaffQForm h1 {
+    font-size: 25px;
+  }
+  .cscStaffQForm h2 {
+    color: var(--testColor);
+    font-size: 22px;
+  }
+}
+

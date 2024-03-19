@@ -1,0 +1,359 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons";
+
+:root {
+  --testColor: #0b0c27;
+  --softColor: #dfd9ff;
+}
+
+body {
+  background: var(--softColor);
+}
+
+/*--------------------------------------------------------------
+  # Generate Navbar Section
+  --------------------------------------------------------------*/
+.genNavbar {
+  padding: 0;
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.genNavbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: end;
+}
+
+.genNavbar li {
+  position: relative;
+}
+
+.genNavbar i {
+  color: var(--softColor);
+}
+
+.genNavbar a,
+.genNavbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lightColor);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.genNavbar a:hover,
+.genNavbar .active,
+.genNavbar .active:focus,
+.genNavbar li:hover > a {
+  color: var(--softColor);
+}
+@media (max-width: 768px) {
+  .sidebar {
+    background: linear-gradient(var(--testColor), var(--softColor));
+    backdrop-filter: blur(10px);
+  }
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+/*--------------------------------------------------------------
+  # Adding Organizatio
+  --------------------------------------------------------------*/
+.generateForm {
+  background: var(--softColor);
+}
+
+.generateForm form {
+  padding: 15px;
+  border: 1px solid var(--testColor);
+  margin-bottom: 20px;
+}
+
+.generateForm hr {
+  color: var(--testColor);
+}
+
+.generateForm h1 {
+  color: var(--testColor);
+  font-size: 35px;
+  margin-top: 15px;
+  line-height: 30px;
+  text-shadow: -1px 0 1px #2f4d5a;
+}
+
+.generateForm h2 {
+  color: var(--testColor);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.generateForm label {
+  color: var(--testColor);
+  font-size: 18px;
+  font-weight: 600;
+}
+.generateForm input {
+  color: var(--testColor);
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid var(--testColor);
+  background-color: transparent;
+}
+
+.generateForm select {
+  color: var(--testColor);
+  border: 1px solid var(--testColor);
+  font-size: 18px;
+  background-color: transparent;
+}
+.generateForm p {
+  color: var(--testColor);
+  text-align: start;
+  font-size: 18px;
+}
+
+.generateForm .btn-submit {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px;
+  height: 60px;
+  color: var(--testColor);
+  background: var(--softColor);
+  border: 1px solid var(--testColor);
+}
+.generateForm .btn-submit:hover {
+  font-size: 24px;
+  color: var(--testColor);
+  background: var(--softColor);
+}
+@media (max-width: 768px) {
+  .generateForm h1 {
+    font-size: 25px;
+  }
+  .generateForm h2 {
+    color: var(--testColor);
+    font-size: 22px;
+  }
+}
+/*--------------------------------------------------------------
+  # Slier Section
+  --------------------------------------------------------------*/
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.carousel-caption p {
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-caption .clickMeBtn {
+  font-size: 18px;
+  color: var(--softColor);
+  border: 1px solid var(--softColor);
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(57, 54, 54, 0.3);
+  z-index: 1;
+}
+.carousel-item img {
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* responsive csss */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption Link {
+    padding: 10px 15px;
+  }
+  .carousel-caption .clickMeBtn {
+    font-size: 17px;
+  }
+}
+
+/*--------------------------------------------------------------
+  # ResultList List
+  --------------------------------------------------------------*/
+.resultList {
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+.resultList hr {
+  color: var(--softColor);
+}
+.resultList .row a {
+  background: linear-gradient(var(--testColor), var(--softColor));
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100px;
+  color: var(--softColor);
+  cursor: pointer;
+}
+.resultList .organization {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: linear-gradient(var(--softColor), var(--testColor));
+  transition: 0.5s;
+  height: 100%;
+}
+
+.resultList .section-title h2 {
+  padding-top: 20px;
+  font-size: 40px;
+  color: var(--softColor);
+}
+.resultList .section-title p {
+  font-size: 20px;
+  color: var(--softColor);
+}
+
+.resultList .organization .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.resultList .organization .pic img {
+  height: 25vh;
+  transition: ease-in-out 0.3s;
+}
+
+.resultList .organization:hover {
+  transform: translateY(-10px);
+}
+
+.resultList .organization .organization-info {
+  padding-left: 20px;
+}
+
+.resultList .organization h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--testColor);
+}
+
+.resultList .organization span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.resultList .organization span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.resultList .organization p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.resultList .organization .links {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+
+.resultList .organization .links a {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(var(--testColor), var(--softColor));
+}
+
+.resultList .organization .links a i {
+  color: var(--testColor);
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.resultList .organization .links a:hover {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+.resultList .row a:hover {
+  background: linear-gradient(var(--softColor), var(--testColor));
+}
+
+.resultList .organization .links a + a {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .resultList .section-title h2 {
+    font-size: 15px;
+  }
+  .resultList .section-title p {
+    font-size: 18px;
+  }
+  .resultList .organization h4 {
+    font-size: 15px;
+  }
+  .resultList .organization .pic {
+    overflow: hidden;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+  .resultList .organization .pic img {
+    height: 15vh;
+
+    transition: ease-in-out 0.3s;
+  }
+}
